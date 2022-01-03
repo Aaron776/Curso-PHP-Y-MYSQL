@@ -3,7 +3,7 @@
 $nombre=$_REQUEST['nombre'];
 
 
-$conexion=mysqli_connect("localhost","root","","testdb") or die("Problemas con la Conexion");
+$conexion=mysqli_connect("localhost","root","","testdb2") or die("Problemas con la Conexion");
  
 
 
@@ -25,15 +25,6 @@ if ($datos=mysqli_fetch_array($registros)) {
 
 
 
- /*while ($datos=mysqli_fetch_array($registros1)) {
- 	echo "Nombre: ".$datos['Nombre'];
- 	print("<br>");
- 	echo "Apellido: ".$datos['Apellido'];
- 	print("<br>");
- 	echo "Calificacion: ".$datos['Calificación'];
- 	print("<br>");
- 	print("<br><br>");
- 	
- }*/
+
 mysqli_close($conexion);
  ?>

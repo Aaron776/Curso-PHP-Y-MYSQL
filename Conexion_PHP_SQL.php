@@ -4,7 +4,7 @@
 
 Esta funcion nos delvolvera la conexion y para esta funcion debe ser almacenada en una variable cualquiera
 */
-$conexion=mysqli_connect("localhost","root","","testdb") or die("Problemas con la Conexion");
+$conexion=mysqli_connect("localhost","root","","testdb2") or die("Problemas con la Conexion");
  print("<h3>Conexion Exitosa</h3>");
 
 
@@ -22,6 +22,7 @@ Otra funcion que usaremos es la siguiente:
 - mysqli_close(): esta funcion lo que nos permite hacer es cerra la conexion, nos pide el parametro que es: la conexioin de la base de datos que esta almacenada en una variable
 */
 mysqli_close($conexion);
+
 
 
 ?>

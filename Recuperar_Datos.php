@@ -4,7 +4,7 @@
 //$apellido=$_REQUEST['apellido'];
 //$calificacion=$_REQUEST['calificacion'];
 
-$conexion=mysqli_connect("localhost","root","","testdb") or die("Problemas con la Conexion");
+$conexion=mysqli_connect("localhost","root","","testdb2") or die("Problemas con la Conexion");
  
 
 //Para recuperar los datos de una base de datos mediante PHP debemos usar el comando de SQL de SELECT * FROM, los valores que nos devulven sera en forma de matriz y para eso debemos almacenar esa funcion en una variable para que sea mas practico:
@@ -29,7 +29,9 @@ $registros1=mysqli_query($conexion,"SELECT * FROM estudiante") or die("Problemas
  	print("<br>");
  	echo "Apellido: ".$datos['Apellido'];
  	print("<br>");
- 	echo "Calificacion: ".$datos['Calificación'];
+    echo "Edad: ".$datos['edad'];
+    print("<br>");
+ 	echo "Calificacion: ".$datos['calificacion'];
  	print("<br>");
  	print("<br><br>");
  	

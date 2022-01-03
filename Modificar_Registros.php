@@ -10,7 +10,7 @@
 $nombre=$_REQUEST['nombre'];
 
 
-$conexion=mysqli_connect("localhost","root","","testdb") or die("Problemas con la Conexion");
+$conexion=mysqli_connect("localhost","root","","testdb2") or die("Problemas con la Conexion");
 
 $registros=mysqli_query($conexion,"SELECT * FROM estudiante WHERE Nombre='$nombre'") or die("Problemas con la consulta");
 
